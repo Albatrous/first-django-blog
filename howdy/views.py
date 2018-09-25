@@ -9,5 +9,5 @@ from django.views.generic import TemplateView
 #class AboutPageView(TemplateView):
 	#template_name = "about.html"
 	
-class post_list(request):
+def post_list(request):
 	return render(request, 'howdy/post_list.html',{})
