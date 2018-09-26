@@ -8,4 +8,5 @@ urlpatterns = [
     #url(r'^$', views.HomePageView.as_view()),
 	#url(r'^about/$', views.AboutPageView.as_view())
 	path('',views.post_list, name='post_list'),
+	path('post/<int:pk>/', views.post_detail, name='post_detail'),
 ]
